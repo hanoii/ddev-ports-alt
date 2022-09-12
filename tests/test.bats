@@ -3,12 +3,14 @@ setup() {
   export DIR="$( cd "$( dirname "$BATS_TEST_FILENAME" )" >/dev/null 2>&1 && pwd )/.."
   export TESTDIR=~/tmp/test-addon-template
   mkdir -p $TESTDIR
-  export PROJNAME=test-addon-template
+  export PROJNAME=test-ports-alt
   export DDEV_NON_INTERACTIVE=true
   ddev delete -Oy ${PROJNAME} >/dev/null 2>&1 || true
   cd "${TESTDIR}"
-  ddev config --project-name=${PROJNAME}
-  ddev start -y >/dev/null
+  cp -R ${DIR}/tests/testdata/* .
+  ddev config --project-name=${PROJNAME} --project-type=php
+  # We will test different ports, so don't start it now
+  #ddev start -y >/dev/null
 }
 
 teardown() {
@@ -27,14 +29,18 @@ teardown() {
   # Do something here to verify functioning extra service
   # For extra credit, use a real CMS with actual config.
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
+  wget -O - http://test-ports-alt.ddev.site:8888 | grep "ddev-ports-alt succeeded"
+  wget -O - https://test-ports-alt.ddev.site:4444 | grep "ddev-ports-alt succeeded"
+  wget -O - http://test-ports-alt.ddev.site:8300 | grep -i mailhog
+  wget -O - https://test-ports-alt.ddev.site:8301 | grep -i mailhog
 }
 
-@test "install from release" {
-  set -eu -o pipefail
-  cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  echo "# ddev get drud/ddev-addon-template with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  ddev get drud/ddev-addon-template
-  ddev restart >/dev/null
+#@test "install from release" {
+  #set -eu -o pipefail
+  #cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
+  #echo "# ddev get drud/ddev-ports-alt with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
+  #ddev get drud/ddev-ports-alt
+  #ddev restart >/dev/null
   # Do something useful here that verifies the add-on
   # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
-}
+#}

@@ -1,0 +1,6 @@
+router_http_port: 8888
+router_https_port: 4444
+mailhog_port: 8300
+mailhog_https_port: 8301
+web_environment:
+  - DDEV_BROWSERSYNC_HTTPS_PORT=3010

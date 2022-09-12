@@ -1,0 +1,621 @@
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'html' -->
+<!-- FILE NAME SUGGESTIONS:
+   * html--front.html.twig
+   * html--user--login.html.twig
+   * html--user.html.twig
+   x html.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/layout/html.html.twig' -->
+<!DOCTYPE html>
+<html lang="en" dir="ltr" prefix="content: http://purl.org/rss/1.0/modules/content/  dc: http://purl.org/dc/terms/  foaf: http://xmlns.com/foaf/0.1/  og: http://ogp.me/ns#  rdfs: http://www.w3.org/2000/01/rdf-schema#  schema: http://schema.org/  sioc: http://rdfs.org/sioc/ns#  sioct: http://rdfs.org/sioc/types#  skos: http://www.w3.org/2004/02/skos/core#  xsd: http://www.w3.org/2001/XMLSchema# " class="antialiased">
+  <head>
+    <meta charset="utf-8" />
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-185755961-00"></script>
+<script>window.dataLayer = window.dataLayer || [];function gtag(){dataLayer.push(arguments)};gtag("js", new Date());gtag("set", "developer_id.dMDhkMT", true);gtag("config", "UA-185755961-00", {"groups":"default","anonymize_ip":true,"page_placeholder":"PLACEHOLDER_page_path","link_attribution":true,"custom_map":{"dimension1":"User role"}});gtag("event", "custom", {"User role":"anonymous"});</script>
+<meta name="Generator" content="Drupal 9 (https://www.drupal.org)" />
+<meta name="MobileOptimized" content="width" />
+<meta name="HandheldFriendly" content="true" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<link rel="icon" href="/themes/custom/windycat_conflux/favicon.ico" type="image/vnd.microsoft.icon" />
+
+    <title>Log in | CONFlux</title>
+    <link rel="stylesheet" media="all" href="/modules/contrib/ajax_loader/css/throbber-general.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/core.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/controlgroup.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/checkboxradio.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/resizable.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/button.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/dialog.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/ajax-progress.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/align.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/autocomplete-loading.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/fieldgroup.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/container-inline.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/clearfix.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/details.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/hidden.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/item-list.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/js.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/nowrap.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/position-container.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/progress.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/reset-appearance.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/resize.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/sticky-header.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-counter.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-counters.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/system-status-report-general-info.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tabledrag.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tablesort.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/themes/stable/css/system/components/tree-child.module.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/core/assets/vendor/jquery.ui/themes/base/theme.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/modules/contrib/ajax_loader/css/three-bounce.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/modules/contrib/cookieconsent/css/dark-bottom.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/themes/custom/windycat_conflux/dist/css/app.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/themes/custom/windycat_conflux/dist/css/styles.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/sites/default/files/asset_injector/css/cc_confetti-b5b61a9bfde263b85284cb483e09f4db.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/sites/default/files/asset_injector/css/cc_shame-957607990bc3eff494d7892eda449387.css?ri26vi" />
+<link rel="stylesheet" media="all" href="/sites/default/files/asset_injector/css/cc_theme-b088f755e686679e5b7df7b510308e90.css?ri26vi" />
+
+    
+        <meta name="theme-color" content="var(--primary)">
+        <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link rel='preload' as='style' href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" onload="this.rel='stylesheet'">
+        <link rel='preload' as='style' href="https://fonts.googleapis.com/css2?family=Roboto+Slab:ital@0;1&wght@100..900&display=swap" onload="this.rel='stylesheet'">
+      </head>
+  <body>
+        <a href="#main-content" class="visually-hidden focusable">
+      Skip to main content
+    </a>
+    
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'off_canvas_page_wrapper' -->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig' -->
+  <div class="dialog-off-canvas-main-canvas" data-off-canvas-main-canvas>
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'page' -->
+<!-- FILE NAME SUGGESTIONS:
+   * page--front.html.twig
+   * page--user--login.html.twig
+   * page--user.html.twig
+   x page.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/layout/page.html.twig' -->
+<div id="page--wrapper" class="fixed flex flex-row w-full h-screen bg-gray-100 page--wrapper">
+      <div x-data="{ searchBarOpen: false }">
+  <header class="page--header fixed z-100 w-full h-16 bg-white dark__bg-gray-600 sm__block" role="banner">
+                              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   x region--header.html.twig
+   * region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region--header.html.twig' -->
+  <div class="region region-header relative flex justify-between h-16 shadow-md z-90">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--system-branding-block--header.html.twig
+   * block--system--header.html.twig
+   * block--header--windycat-conflux-sitebranding.html.twig
+   * block--header.html.twig
+   * block--windycat-conflux-sitebranding.html.twig
+   x block--system-branding-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/block/block--system-branding-block.html.twig' -->
+<div id="block-windycat-conflux-sitebranding" class="flex-shrink-0">
+  
+    
+    <div class="flex items-center justify-center h-full">
+          <a href="/" title="Home" rel="home" class="site-logo">
+        <img class="px-6 py-2 max-h-16" src="/themes/custom/windycat_conflux/logo.png" alt="Home" />
+      </a>
+              </div>
+</div>
+
+
+
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/block/block--system-branding-block.html.twig' -->
+
+
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--system-menu-block--account--header.html.twig
+   * block--system--account--header.html.twig
+   * block--system-menu-block--header.html.twig
+   * block--system--header.html.twig
+   * block--header--windycat-conflux-user-menu.html.twig
+   * block--header.html.twig
+   * block--windycat-conflux-user-menu.html.twig
+   x block--system-menu-block--account.html.twig
+   * block--system-menu-block.html.twig
+   * block--system.html.twig
+   * block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/block/block--system-menu-block--account.html.twig' -->
+<div class="inline-flex items-center">
+        <nav role="navigation" aria-labelledby="block-windycat-conflux-user-menu-menu" id="block-windycat-conflux-user-menu" class="flex-shrink-0 h-full">
+                      
+    <h2 class="block__title visually-hidden" id="block-windycat-conflux-user-menu-menu">User account menu</h2>
+    
+
+              
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'menu__account' -->
+<!-- FILE NAME SUGGESTIONS:
+   x menu--account.html.twig
+   x menu--account.html.twig
+   * menu--header.html.twig
+   * menu.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/navigation/menu--account.html.twig' -->
+
+      <div class="relative h-full" x-data="{ userActionsOpen: false }">
+    <div class="flex items-center h-full px-6 cursor-pointer opacity-85 hover__bg-gray-50 hover__opacity-100 focus__outline-none" @click="userActionsOpen = true">
+        <div class="flex flex-col items-center justify-center lg__justify-start lg__flex-row content">
+                                                        
+
+    
+
+  <div class="user--compact--headshot">
+    <span class="relative inline-block">
+          <img class="mr-3 bg-gray-50 border-2 border-white rounded-full shadow-lg w-13 h-auto min-w-13"
+        src="https://ui-avatars.com/api/?name=anonymous&size=220&background=EEEEEE&color=333333"
+        alt="Anonymous Headshot">
+  
+          </span>
+  </div>
+                  </div>
+        <div class="flex items-center font-bold">
+          <span class="leading-none"> Login </span>
+          <i class="ml-3 text-gray-500 transition-colors duration-150 ease-in-out fas fa-solid fa-caret-up" userActionsOpen x-show="userActionsOpen" x-state:on="Expanded" x-state:off="Collapsed"></i>
+          <i class="ml-3 text-gray-500 transition-colors duration-150 ease-in-out fas fa-solid fa-caret-down" userActionsOpen x-show="!userActionsOpen"></i>
+        </div>
+    </div>
+          <ul data-block-id="windycat_conflux_user_menu" class="absolute divide-y divide-gray-200 w-full bg-white rounded-b-lg shadow-lg min-w-64 right-0 mr-6"
+      x-show="userActionsOpen"
+      @click.away="userActionsOpen = false"
+      x-transition:enter="transition-opacity ease-out duration-500"
+      x-transition:enter-start="opacity-0 transform scale-90"
+      x-transition:enter-end="opacity-100 transform scale-100"
+      x-transition:leave="transition-opacity ease-in duration-150"
+      x-transition:leave-start="opacity-100 transform scale-100"
+      x-transition:leave-end="opacity-0 transform scale-90"
+      x-cloak>
+              <li class="hover__bg-gray-50 last__rounded-b-lg">
+        <a href="/user/login" class="p-3 block mb-0 no-underline is-active" data-drupal-link-system-path="user/login">Log in</a>
+              </li>
+          </ul>
+        </div>
+  
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/navigation/menu--account.html.twig' -->
+
+
+      </nav>
+</div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/block/block--system-menu-block--account.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region--header.html.twig' -->
+
+
+                                          
+                  </header>
+    <header class="fixed w-full bg-white z-100 mobile--page--menu--primary-sidebar bg-sidebar sm__hidden" role="banner">
+    
+          </header>
+  </div>
+    <div id="page--inner-wrapper" class="flex flex-col flex-grow w-full mt-28 sm__mt-16">
+        <div class="flex flex-row w-full h-full">
+                  <div id="main--wrapper" class="relative flex flex-col w-full overflow-x-hidden bg-white dark__bg-gray-900 scattered-geometry-dark-faded layout--main--wrapper">
+        <div x-show="userActionsOpen" @click="userActionsOpen = false" class="fixed w-full h-full p-6 bg-gray-500 opacity-75 z-80" x-transition:enter="transition ease-out duration-300" x-transition:enter-start="opacity-0 transform" x-transition:enter-end="opacity-75 transform" x-transition:leave="transition ease-in duration-150" x-transition:leave-start="opacity-75 transform" x-transition:leave-end="opacity-0 transform" x-cloak>
+          <div class="flex items-center justify-center w-full h-full" style="filter: opacity(0.1);">
+            <svg width="75%" height="100%" id="confcats--logomark" xmlns="http://www.w3.org/2000/svg" x="0px" y="0px" viewBox="0 0 128 102.4">
+  <defs>
+    <style type="text/css">.confcats-blue{fill:#9fa6b2;}.confcats-gray{fill:#9fa6b2;}</style>
+  </defs>
+  <g id="confcats--logomark">
+    <g id="confcats--logomark--left">
+      <path class="confcats-blue" d="M98,82.1l4.4,1.3V19C68.9,18.7,46.1,33.7,47,47.6S71.8,73.1,98,82.1"/>
+    </g>
+    <g id="confcats--logomark--center">
+      <path class="confcats-gray" d="M128,2.1c0-0.1,0-0.2-0.2-0.2l-0.6-0.1C115.8-0.5,96-1.1,68.5,3.6C2.5,15.1-24.7,72.5,95.2,86.3c0.1,0,0.2-0.1,0.2-0.2c0-0.1,0-0.1-0.1-0.2c-39.4-12.7-58.1-27.1-59-43.8c-0.8-15.3,12-28.9,46.4-37.2c11.5-2.7,19.5-4,44.6-2.7h0.4C127.8,2.2,127.9,2.2,128,2.1z"/>
+    </g>
+    <g id="confcats--logomark--left">
+      <path class="confcats-blue" d="M36.6,88.1c-9.4-5.3-18.7-11.8-25-20.5c-3.1-4-5.2-8.7-6.1-13.7c-0.8-5.3-0.3-10.7,1.7-15.6c3.7-9.9,12-17.4,20.9-23.1C37.8,9,48.4,4.3,59.6,1.1l4-1.1H0v102.4h69C68.3,102,46.8,93.8,36.6,88.1"/>
+    </g>
+  </g>
+</svg>
+          </div>
+        </div>
+                <main id="main" role="main" class="flex-grow main layout--main">
+
+                    
+                    <div>
+                          
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--local-actions.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region.html.twig' -->
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region.html.twig' -->
+
+
+                                                                                    <a id="main-content" tabindex="-1" class="sr-only"></a>            
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'region' -->
+<!-- FILE NAME SUGGESTIONS:
+   * region--content.html.twig
+   x region.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region.html.twig' -->
+  <div id="region--content"  class="region--content">
+    <div data-drupal-messages-fallback class="hidden"></div>
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'block' -->
+<!-- FILE NAME SUGGESTIONS:
+   * block--system-main-block--content.html.twig
+   * block--system--content.html.twig
+   * block--content--windycat-conflux-content.html.twig
+   * block--content.html.twig
+   * block--windycat-conflux-content.html.twig
+   * block--system-main-block.html.twig
+   * block--system.html.twig
+   x block.html.twig
+-->
+<!-- BEGIN OUTPUT from 'core/themes/stable/templates/block/block.html.twig' -->
+<div id="block-windycat-conflux-content">
+  
+    
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form' -->
+<!-- FILE NAME SUGGESTIONS:
+   x form--user-login-form.html.twig
+   * form.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/form--user-login-form.html.twig' -->
+<form class="user-login-form p-6" data-drupal-selector="user-login-form" action="/" method="post" id="user-login-form" accept-charset="UTF-8">
+  <div class="mb-12">
+    <img class="max-w-xs mx-auto"src="https://confcats-assets.s3.amazonaws.com/images/conflux-platform-logo.png">
+  </div>
+  <div class="max-w-md mx-auto">
+        <div class="mb-12 prose text-center">
+      <h1 class="-mb-4">Welcome back!</h1>
+      <div class="font-medium">
+        <p class="login-title">Log in with your provided Email and Password</p>
+      </div>
+    </div>
+    <div class="mb-9">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element' -->
+<!-- FILE NAME SUGGESTIONS:
+   * form-element--name.html.twig
+   * form-element--textfield.html.twig
+   * form-element--edit-name.html.twig
+   * form-element--user-login-form--textfield.html.twig
+   * form-element--form-id--user-login-form.html.twig
+   * form-element--type--textfield.html.twig
+   x form-element.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element.html.twig' -->
+<div class="js-form-item form-item js-form-type-textfield form-item-name js-form-item-name px-3 mb-6 w-full sm__w-auto">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element_label' -->
+<!-- FILE NAME SUGGESTIONS:
+   * form-element-label--user-login-form--textfield.html.twig
+   * form-element-label--form-id--user-login-form.html.twig
+   * form-element-label--type--textfield.html.twig
+   x form-element-label.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element-label.html.twig' -->
+<label for="edit-name" class="js-form-required form-required uppercase font-bold mb-3 block tracking-wide text-sm">Email</label>
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element-label.html.twig' -->
+
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__textfield' -->
+<!-- FILE NAME SUGGESTIONS:
+   x input--textfield.html.twig
+   x input--textfield.html.twig
+   * input--edit-name.html.twig
+   * input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--textfield.html.twig' -->
+<input autocorrect="none" autocapitalize="none" spellcheck="false" autofocus="autofocus" title="attendee@conflux.io" placeholder="attendee@conflux.io" data-drupal-selector="edit-name" type="text" id="edit-name" name="name" value="" size="50" maxlength="60" class="form-text required form-input bg-gray-100 focus__bg-white focus__border focus__outline-none leading-tight appearance-none block text-gray-700 border border-gray-300 rounded-lg py-3 px-4 focus__border-gray-500 mb-0 focus__shadow transition ease-in-out duration-150" required="required" aria-required="true" />
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--textfield.html.twig' -->
+
+
+        </div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element.html.twig' -->
+
+
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element' -->
+<!-- FILE NAME SUGGESTIONS:
+   * form-element--pass.html.twig
+   * form-element--password.html.twig
+   * form-element--edit-pass.html.twig
+   * form-element--user-login-form--password.html.twig
+   * form-element--form-id--user-login-form.html.twig
+   * form-element--type--password.html.twig
+   x form-element.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element.html.twig' -->
+<div class="js-form-item form-item js-form-type-password form-item-pass js-form-item-pass px-3 mb-6 w-full sm__w-auto">
+      
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'form_element_label' -->
+<!-- FILE NAME SUGGESTIONS:
+   * form-element-label--user-login-form--password.html.twig
+   * form-element-label--form-id--user-login-form.html.twig
+   * form-element-label--type--password.html.twig
+   x form-element-label.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element-label.html.twig' -->
+<label for="edit-pass" class="js-form-required form-required uppercase font-bold mb-3 block tracking-wide text-sm">Password</label>
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element-label.html.twig' -->
+
+
+        
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__password' -->
+<!-- FILE NAME SUGGESTIONS:
+   x input--password.html.twig
+   x input--password.html.twig
+   * input--edit-pass.html.twig
+   * input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--password.html.twig' -->
+<input title="password" placeholder="password" data-drupal-selector="edit-pass" type="password" id="edit-pass" name="pass" size="50" maxlength="128" class="form-text required form-input bg-gray-100 focus__bg-white focus__border focus__outline-none leading-tight appearance-none block text-gray-700 border border-gray-300 rounded-lg py-3 px-4 focus__border-gray-500 mb-0 focus__shadow transition ease-in-out duration-150" required="required" aria-required="true" />
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--password.html.twig' -->
+
+
+        </div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/form-element.html.twig' -->
+
+
+    </div>
+    <div class="-mx-3 -mb-4">
+    
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'container' -->
+<!-- FILE NAME SUGGESTIONS:
+   x container--actions.html.twig
+   * container--has-parent.html.twig
+   * container.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/container--actions.html.twig' -->
+<style>
+  .ui-dialog-content .form-actions.webform-actions.js-form-wrapper {
+    display: none !important;
+  }
+</style>
+<div data-drupal-selector="edit-actions" class="form-actions js-form-wrapper form-wrapper flex px-3 sm__items-end w-full sm__w-auto mb-6" id="edit-actions">
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__submit' -->
+<!-- FILE NAME SUGGESTIONS:
+   x input--submit.html.twig
+   x input--submit.html.twig
+   * input--edit-submit.html.twig
+   * input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--submit.html.twig' -->
+<input data-drupal-selector="edit-submit" type="submit" id="edit-submit" name="op" value="Log in" class="button js-form-submit form-submit btn btn-primary mr-3" type="button"/>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/input--submit.html.twig' -->
+
+</div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/container--actions.html.twig' -->
+
+
+    </div>
+    <div class="prose text-center">
+      <p class="forgot-password"><a href="/user/password">Forgot Password?</a></p>
+    </div>
+  </div>
+  
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__hidden' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--hidden.html.twig
+   * input--form-CvvRH8n5-xH-QhyCJJd-8zkKNZtEiER3Jga50W-WxMk.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/input.html.twig' -->
+<input autocomplete="off" data-drupal-selector="form-cvvrh8n5-xh-qhycjjd-8zkknzteier3jga50w-wxmk" type="hidden" name="form_build_id" value="form-CvvRH8n5-xH-QhyCJJd_8zkKNZtEiER3Jga50W-WxMk" class="form-input bg-gray-100 focus__bg-white focus__border focus__outline-none leading-tight appearance-none block text-gray-700 border border-gray-300 rounded-lg py-3 px-4 focus__border-gray-500 mb-0 focus__shadow transition ease-in-out duration-150" />
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/input.html.twig' -->
+
+   
+
+<!-- THEME DEBUG -->
+<!-- THEME HOOK: 'input__hidden' -->
+<!-- FILE NAME SUGGESTIONS:
+   * input--hidden.html.twig
+   * input--edit-user-login-form.html.twig
+   x input.html.twig
+-->
+<!-- BEGIN OUTPUT from 'themes/custom/windycat_conflux/templates/form/input.html.twig' -->
+<input data-drupal-selector="edit-user-login-form" type="hidden" name="form_id" value="user_login_form" class="form-input bg-gray-100 focus__bg-white focus__border focus__outline-none leading-tight appearance-none block text-gray-700 border border-gray-300 rounded-lg py-3 px-4 focus__border-gray-500 mb-0 focus__shadow transition ease-in-out duration-150" />
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/input.html.twig' -->
+
+ </form>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/form/form--user-login-form.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/themes/stable/templates/block/block.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/layout/region.html.twig' -->
+
+
+          </div>
+        </main>
+                        <footer id="footer" class="w-full layout--footer">
+          <div id="footer--ieee" class="p-6 text-xs text-center bg-primary-600 md__text-left">
+  <ul id="footer--ieee--nav" class="flex flex-wrap justify-center mb-4 text-white divide-x-2 divide-primary-500 pace-y-3 md__justify-start">
+    <li class="flex items-center py-2 pr-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/index.html" target="_blank">Home</a>
+    </li>
+    <li class="flex items-center px-2 py-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/sitemap.html" target="_blank">Sitemap/More Sites</a>
+    </li>
+    <li class="flex items-center px-2 py-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/about/contact_center/index.html" target="_blank">Contact &amp; Support</a>
+    </li>
+    <li class="flex items-center px-2 py-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/accessibility_statement.html" target="_blank">Accessibility</a>
+    </li>
+    <li class="flex items-center px-2 py-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/p9-26.html" target="_blank">Nondiscrimination Policy</a>
+    </li>
+    <li class="flex items-center py-2 pl-2">
+      <a class="leading-tight no-underline opacity-75 hover__opacity-100" href="http://www.ieee.org/security_privacy.html" target="_blank">IEEE Privacy Policy</a>
+    </li>
+  </ul>
+
+  <p id="footer--ieee--copyright" class="mb-0 text-white opacity-75">© Copyright 2022 IEEE – All rights reserved. Use of this website signifies your agreement to the
+    <a class="text-white underline opacity-75 hover__opacity-100" target="" href="http://www.ieee.org/site_terms_conditions.html">IEEE Terms and Conditions</a>.<br>A not-for-profit organization, IEEE is the world's largest technical professional organization dedicated to advancing technology for the benefit of humanity.
+  </p>
+</div>
+          <div id="footer--confcats" class="p-6 text-xs text-center bg-primary-700 md__text-left">
+  <p id="footer--ieee--copyright" class="mb-0 text-white opacity-75"><strong>CONF</strong>lux Platform created with <i class="mx-1 text-red-500 fas fa-solid fa-heart"></i> and powered by
+    <a class="text-white underline opacity-75 hover__opacity-100" href="http://conferencecatalysts.com" target="_blank">Conference Catalysts, LLC</a>.<br>Please feel free to
+    <a class="text-white underline opacity-75 hover__opacity-100" href="http://conferencecatalysts.com/contact" target="_blank">contact us</a>
+    for any assistance.
+  </p>
+</div>
+        </footer>
+              </div>
+            
+            
+    </div>
+  </div>
+</div>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/layout/page.html.twig' -->
+
+
+  </div>
+
+<!-- END OUTPUT from 'core/themes/stable/templates/content/off-canvas-page-wrapper.html.twig' -->
+
+
+    
+    <script type="application/json" data-drupal-selector="drupal-settings-json">{"path":{"baseUrl":"\/","scriptPath":null,"pathPrefix":"","currentPath":"user\/login","currentPathIsAdmin":false,"isFront":true,"currentLanguage":"en"},"pluralDelimiter":"\u0003","suppressDeprecationErrors":true,"ajaxPageState":{"libraries":"ajax_loader\/ajax_loader.throbber,asset_injector\/css\/cc_confetti,asset_injector\/css\/cc_shame,asset_injector\/css\/cc_theme,cookieconsent\/cookieconsent-min,cookieconsent\/dark-bottom,cookieconsent\/settings,google_analytics\/google_analytics,super_login\/super_login_js,system\/base,webform\/webform.dialog,windycat_base\/global-styling,windycat_conflux\/global-styling","theme":"windycat_conflux","theme_token":null},"ajaxTrustedUrl":{"form_action_p_pvdeGsVG5zNF_XLGPTvYSKCf43t8qZYSwcfZl2uzM":true},"ajaxLoader":{"markup":"\u003Cdiv class=\u0022ajax-throbber sk-three-bounce\u0022\u003E\n              \u003Cdiv class=\u0022sk-child sk-bounce1\u0022\u003E\u003C\/div\u003E\n              \u003Cdiv class=\u0022sk-child sk-bounce2\u0022\u003E\u003C\/div\u003E\n              \u003Cdiv class=\u0022sk-child sk-bounce3\u0022\u003E\u003C\/div\u003E\n            \u003C\/div\u003E","hideAjaxMessage":false,"alwaysFullscreen":true,"throbberPosition":"body"},"cookieconsent":{"message":"IEEE websites place cookies on your device to give you the best user experience. By using our websites, you agree to the placement of these cookies. To learn more, read our \u003Ca aria-label=\u0022learn more about cookies\u0022 role=\u0022button\u0022 tabindex=\u00220\u0022 class=\u0022cc-link\u0022 href=\u0022https:\/\/www.ieee.org\/about\/help\/security_privacy.html\u0022 target=\u0022_blank\u0022\u003EPrivacy Policy.\u003C\/a\u003E","dismiss":"Accept \u0026 Close","learnMore":"More info","link":"","path":"\/","expiry":1,"target":"_self","domain":".conflux.ddev.site","markup":"\n\n\u003C!-- THEME DEBUG --\u003E\n\u003C!-- THEME HOOK: \u0027cookieconsent\u0027 --\u003E\n\u003C!-- BEGIN OUTPUT from \u0027themes\/custom\/windycat_conflux\/templates\/misc\/cookieconsent.html.twig\u0027 --\u003E\n\u003Cdiv class=\u0022cc_banner cc_container cc_container--open\u0022\u003E\n    \u003Ca href=\u0022#null\u0022 data-cc-event=\u0022click:dismiss\u0022 target=\u0022_blank\u0022 class=\u0022cc_btn cc_btn_accept_all\u0022\u003EAccept \u0026amp; Close\u003C\/a\u003E\n    \u003Cp class=\u0022cc_message\u0022\u003EIEEE websites place cookies on your device to give you the best user experience. By using our websites, you agree to the placement of these cookies. To learn more, read our \u003Ca aria-label=\u0022learn more about cookies\u0022 role=\u0022button\u0022 tabindex=\u00220\u0022 class=\u0022cc-link\u0022 href=\u0022https:\/\/www.ieee.org\/about\/help\/security_privacy.html\u0022 target=\u0022_blank\u0022\u003EPrivacy Policy.\u003C\/a\u003E \u003Ca data-cc-if=\u0022options.link\u0022 target=\u0022_self\u0022 class=\u0022cc_more_info\u0022 href=\u0022\u0022\u003EMore info\u003C\/a\u003E\u003C\/p\u003E\n\u003C\/div\u003E\n\n\u003C!-- END OUTPUT from \u0027themes\/custom\/windycat_conflux\/templates\/misc\/cookieconsent.html.twig\u0027 --\u003E\n\n","container":null,"theme":false},"google_analytics":{"account":{},"trackOutbound":true,"trackMailto":true,"trackTel":true,"trackDownload":true,"trackDownloadExtensions":"7z|aac|arc|arj|asf|asx|avi|bin|csv|doc(x|m)?|dot(x|m)?|exe|flv|gif|gz|gzip|hqx|jar|jpe?g|js|mp(2|3|4|e?g)|mov(ie)?|msi|msp|pdf|phps|png|ppt(x|m)?|pot(x|m)?|pps(x|m)?|ppam|sld(x|m)?|thmx|qtm?|ra(m|r)?|sea|sit|tar|tgz|torrent|txt|wav|wma|wmv|wpd|xls(x|m|b)?|xlt(x|m)|xlam|xml|z|zip"},"webform":{"dialog":{"options":{"narrow":{"title":"Narrow","width":600},"normal":{"title":"Normal","width":800},"wide":{"title":"Wide","width":1000}}}},"show_messages":1,"user":{"displayName":null,"mail":null,"uid":0,"permissionsHash":"a2cd32bb139df9714ff40ea0232a977e087dc30aac7b5113c6b49d12c0261ebc"},"conferece":{"timezone":"UTC"}}</script>
+<script src="/core/assets/vendor/jquery/jquery.min.js?v=3.6.0"></script>
+<script src="/core/misc/polyfills/nodelist.foreach.js?v=9.4.5"></script>
+<script src="/core/misc/polyfills/element.matches.js?v=9.4.5"></script>
+<script src="/core/misc/polyfills/object.assign.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/css-escape/css.escape.js?v=1.5.1"></script>
+<script src="/core/assets/vendor/once/once.min.js?v=1.0.1"></script>
+<script src="/core/assets/vendor/jquery-once/jquery.once.min.js?v=2.2.3"></script>
+<script src="/core/misc/drupalSettingsLoader.js?v=9.4.5"></script>
+<script src="/core/misc/drupal.js?v=9.4.5"></script>
+<script src="/core/misc/drupal.init.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/version-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/data-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/disable-selection-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/jquery-patch-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/scroll-parent-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/unique-id-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/focusable-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/ie-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/keycode-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/plugin-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-active-element-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/safe-blur-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widget-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/controlgroup-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/form-reset-mixin-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/labels-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/mouse-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/checkboxradio-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/draggable-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/resizable-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/button-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/jquery.ui/ui/widgets/dialog-min.js?v=9.4.5"></script>
+<script src="/core/assets/vendor/tabbable/index.umd.min.js?v=5.3.2"></script>
+<script src="/core/misc/progress.js?v=9.4.5"></script>
+<script src="/core/misc/jquery.once.bc.js?v=9.4.5"></script>
+<script src="/core/misc/ajax.js?v=9.4.5"></script>
+<script src="/core/themes/stable/js/ajax.js?v=9.4.5"></script>
+<script src="/modules/contrib/ajax_loader/js/ajax-throbber.js?v=1.x"></script>
+<script src="/modules/contrib/cookieconsent/js/cookieconsent.settings.js?v=1.x"></script>
+<script src="/modules/contrib/cookieconsent/js/cookieconsent.min.js?v=1.0.9"></script>
+<script src="/modules/contrib/google_analytics/js/google_analytics.js?v=9.4.5"></script>
+<script src="/themes/custom/windycat_conflux/dist/js/app.js?ri26vi"></script>
+<script src="/themes/custom/windycat_conflux/dist/js/fonts.js?ri26vi"></script>
+<script src="/themes/custom/windycat_conflux/dist/js/vendor.js?ri26vi"></script>
+<script src="/themes/custom/windycat_conflux/dist/js/manifest.js?ri26vi"></script>
+<script src="/core/misc/debounce.js?v=9.4.5"></script>
+<script src="/core/misc/displace.js?v=9.4.5"></script>
+<script src="/core/misc/jquery.tabbable.shim.js?v=9.4.5"></script>
+<script src="/core/misc/position.js?v=9.4.5"></script>
+<script src="/core/misc/dialog/dialog.js?v=9.4.5"></script>
+<script src="/core/misc/dialog/dialog.position.js?v=9.4.5"></script>
+<script src="/core/misc/dialog/dialog.jquery-ui.js?v=9.4.5"></script>
+<script src="/core/misc/dialog/dialog.ajax.js?v=9.4.5"></script>
+<script src="/modules/contrib/webform/js/webform.drupal.dialog.js?v=9.4.5"></script>
+<script src="/modules/contrib/webform/js/webform.dialog.js?v=9.4.5"></script>
+<script src="/modules/contrib/super_login/js/super-login.js?v=1.x"></script>
+
+  </body>
+</html>
+
+<!-- END OUTPUT from 'themes/custom/windycat_conflux/templates/layout/html.html.twig' -->
+
