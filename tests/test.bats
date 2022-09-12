@@ -27,20 +27,21 @@ teardown() {
   ddev get ${DIR}
   ddev restart
   # Do something here to verify functioning extra service
-  # For extra credit, use a real CMS with actual config.
-  # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
   wget -O - http://test-ports-alt.ddev.site:8888 | grep "ddev-ports-alt succeeded"
   wget -O - https://test-ports-alt.ddev.site:4444 | grep "ddev-ports-alt succeeded"
   wget -O - http://test-ports-alt.ddev.site:8300 | grep -i mailhog
   wget -O - https://test-ports-alt.ddev.site:8301 | grep -i mailhog
 }
 
-#@test "install from release" {
-  #set -eu -o pipefail
-  #cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
-  #echo "# ddev get drud/ddev-ports-alt with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
-  #ddev get drud/ddev-ports-alt
-  #ddev restart >/dev/null
+@test "install from release" {
+  set -eu -o pipefail
+  cd ${TESTDIR} || ( printf "unable to cd to ${TESTDIR}\n" && exit 1 )
+  echo "# ddev get hanoii/ddev-ports-alt with project ${PROJNAME} in ${TESTDIR} ($(pwd))" >&3
+  ddev get hanoii/ddev-ports-alt
+  ddev restart >/dev/null
   # Do something useful here that verifies the add-on
-  # ddev exec "curl -s elasticsearch:9200" | grep "${PROJNAME}-elasticsearch"
-#}
+  wget -O - http://test-ports-alt.ddev.site:8888 | grep "ddev-ports-alt succeeded"
+  wget -O - https://test-ports-alt.ddev.site:4444 | grep "ddev-ports-alt succeeded"
+  wget -O - http://test-ports-alt.ddev.site:8300 | grep -i mailhog
+  wget -O - https://test-ports-alt.ddev.site:8301 | grep -i mailhog
+}
