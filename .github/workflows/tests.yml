@@ -37,6 +37,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - run: echo "/home/linuxbrew/.linuxbrew/bin:/home/linuxbrew/.linuxbrew/sbin" >> $GITHUB_PATH
     - name: Environment setup
       run: |
         brew install bats-core mkcert
@@ -62,7 +63,7 @@ jobs:
         mv ddev /usr/local/bin/ddev && chmod +x /usr/local/bin/ddev
 
     - name: Download docker images
-      run: | 
+      run: |
         mkdir junk && pushd junk && ddev config --auto && ddev debug download-images >/dev/null
         docker pull memcached:1.6 >/dev/null
     - name: tmate debugging session
@@ -78,5 +79,3 @@ jobs:
     # keepalive-workflow adds a dummy commit if there's no other action here, keeps
     # GitHub from turning off tests after 60 days
     - uses: gautamkrishnar/keepalive-workflow@v1
-
-
